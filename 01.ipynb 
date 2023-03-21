@@ -1,0 +1,1840 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "AjShVOtfD5vo"
+      },
+      "source": [
+        "# Primeiros passos\n",
+        "\n",
+        "O interpretador Python é um cara legal que gosta de conversar, mas ele é um pouco repetitivo..\n",
+        "\n",
+        "Os notebooks Jupyter se comunicam com o interpretador, mandando suas mensagens e mostrando as resposta que ele dá. \n",
+        "\n",
+        "Clique no botão de Play para executar a célula abaixo (ou selecione a célula e aperte Shift+Enter)."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "JRm6D1SCD5vr",
+        "outputId": "7c975b58-a539-45b0-a486-486fb2f4186c",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Oi Python!'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 1
+        }
+      ],
+      "source": [
+        "\"Oi Python!\""
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "V4vFCF9aD5vt"
+      },
+      "source": [
+        "## Melhorando a conversa com o interpretador\n",
+        "\n",
+        ">Se o interpretador apenas repete o que eu falo, pra que ele serve? 🤔\n",
+        ">*, perguntou um aluno apressado.*\n",
+        "\n",
+        "O interpretador é mais sagaz do que parece. Teste as células abaixo:"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "IxbbyGyPD5vt"
+      },
+      "outputs": [],
+      "source": [
+        "\"Oi Python!\".upper()"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "scrolled": true,
+        "id": "B6DwbdKmD5vu"
+      },
+      "outputs": [],
+      "source": [
+        "\"Oi Python!\".lower()"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "HZCvNuVMD5vu"
+      },
+      "outputs": [],
+      "source": [
+        "\"Oi Python!\" + \" Tudo bom?\""
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "id": "2XtVJ8GAD5vu",
+        "outputId": "05a4beab-6b0a-413f-aeb5-adb2e7c02462",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['Oi', 'Python!']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 2
+        }
+      ],
+      "source": [
+        "\"Oi Python!\".split()"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ZEvZ2BQkD5vu"
+      },
+      "source": [
+        "### Exercícios de fixação"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "lSB8N83ND5vv"
+      },
+      "source": [
+        "EF1 - Peça pra o interpretador dizer **\"Bom dia\"** com letras minúsculas. "
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "id": "C25XAe4DD5vv",
+        "outputId": "134b7e6d-8b62-4221-d0ee-97e919323928",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'bom dia'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ],
+      "source": [
+        "'Bom dia'.lower()"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "dn5SCrrnD5vv"
+      },
+      "source": [
+        "EF2 - Peça pra o interpretador dizer **\"Boa tarde\"** com letras maiúsculas. "
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 4,
+      "metadata": {
+        "id": "FcOxOFboD5vw",
+        "outputId": "b78343c1-c0f3-4621-8957-d9a1a25ce226",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'BOA TARDE'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 4
+        }
+      ],
+      "source": [
+        "'Boa Tarde'.upper()"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "1eYGULVPD5vw"
+      },
+      "source": [
+        "EF3 - Peça pra o interpretador dizer **\"Bom dia ou Boa tarde?\"**, sendo o **\"Bom dia\"** com letras maiúsculas e o **\"boa tarde\"** com letras minúsculas. "
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "id": "icxryDsZD5vw",
+        "outputId": "e0fcf057-db90-4391-aee6-80dcd4eda610",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'bom dia ou BOA TARDE'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ],
+      "source": [
+        "'bom dia'.lower() + ' ou ' + 'Boa tarde'.upper()"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "pmYDmdMhD5vw"
+      },
+      "source": [
+        "### Exercícios complementares"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "GRGrpPDRD5vw"
+      },
+      "source": [
+        "EC1 - O que você acha que a opção `split()` significa para o interpretador? Dica -- pesquise no Google Translate."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "yfr-4ZGlD5vx"
+      },
+      "source": [
+        "*Escreva sua resposta aqui*"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "jdE0uPicD5vx"
+      },
+      "source": [
+        "A gente vai estudar o `split` com mais calma depois, mas por enquanto vamos ver um pouco sobre números."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "3yT1FhBhD5vx"
+      },
+      "source": [
+        "## Trabalhando com números\n",
+        "\n",
+        "O interpretador Python também consegue lidar com números e operadores aritméticos, que podem ser usados para construir **expressões aritméticas**. \n",
+        "\n",
+        "As regras básicas sobre expressões aritméticas em Python são:\n",
+        "\n",
+        "* Em geral, a precedência dos operadores em Python segue a precedência que conhecemos da matemática. \n",
+        "* Assim como na matemática, é possível usar parênteses para mudar a ordem de avaliação de uma expressão.\n",
+        "* Caso reste apenas operações de mesma precedência, a expressão passa a ser avaliada da esquerda para a direita.\n",
+        "\n",
+        "Alguns dos operadores aritméticos disponíveis em Python estão listados abaixo. "
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "NDhGx3mCD5vx"
+      },
+      "source": [
+        "| Símbolo | Operação |\n",
+        "|:----:|---|\n",
+        "| +  | Adição |\n",
+        "| -  | Subtração |\n",
+        "| /  | Divisão |\n",
+        "| // | Divisão inteira |\n",
+        "| %  | Resto |\n",
+        "| *  | Multiplicação |\n",
+        "| **  | Exponenciação |"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "1y0eadqbD5vx"
+      },
+      "source": [
+        "Teste as células abaixo:"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 7,
+      "metadata": {
+        "id": "CpiLBYPKD5vy",
+        "outputId": "163652f7-d030-48a0-a395-cfadd51bd388",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "8"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ],
+      "source": [
+        "1+2+5"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 8,
+      "metadata": {
+        "id": "tqCgHvAmD5vy",
+        "outputId": "50c8794f-b1e0-4b1c-a59c-da49ca16b1f0",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "1"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ],
+      "source": [
+        "2-1"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 9,
+      "metadata": {
+        "id": "BZ_43CkZD5vy",
+        "outputId": "9047516d-c8db-49e0-913c-fd4104a43f16",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "2"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 9
+        }
+      ],
+      "source": [
+        "1*2"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 10,
+      "metadata": {
+        "scrolled": true,
+        "id": "KKmk0OjyD5vy",
+        "outputId": "a0668e03-d99d-4b87-874a-aed0628feefc",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "0.75"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 10
+        }
+      ],
+      "source": [
+        "3/4"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 11,
+      "metadata": {
+        "id": "Ihc5wVKyD5vy",
+        "outputId": "504deed5-c2ed-41df-cb3c-10d3128ede55",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "8"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 11
+        }
+      ],
+      "source": [
+        "2 ** 3"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "g7DY-u6lD5vz"
+      },
+      "source": [
+        "No entanto, você não deve misturar textos e números:"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 12,
+      "metadata": {
+        "scrolled": true,
+        "id": "QTd3lgMKD5vz",
+        "outputId": "58faa54c-4e07-4dae-e355-00ebc153e5ec",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 165
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-12-85e4d6029825>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0;34m\"Este é um texto\"\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0;36m3\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: can only concatenate str (not \"int\") to str"
+          ]
+        }
+      ],
+      "source": [
+        "\"Este é um texto\" + 3"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "LxqLJmCdD5vz"
+      },
+      "source": [
+        "### Exercícios de fixação"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "BE_Id_dWD5vz"
+      },
+      "source": [
+        "EF4 - Calcule o produto dos números 11 e 12."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 13,
+      "metadata": {
+        "id": "Jnu20cMaD5vz",
+        "outputId": "f2ee8cb3-3445-406f-ad09-5d970eb2163e",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "132"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 13
+        }
+      ],
+      "source": [
+        "11 * 12"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "NYeazxreD5vz"
+      },
+      "source": [
+        "EF5 - Calcule o quadrado do número 16."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 14,
+      "metadata": {
+        "id": "Ipy9uA4pD5v0",
+        "outputId": "97eff6ab-b06c-4385-9228-c010bac7c8a8",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "256"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 14
+        }
+      ],
+      "source": [
+        "16**2"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "fE80IJ_ND5v0"
+      },
+      "source": [
+        "EF6 - Calcule a raiz quadrada de 1024."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 15,
+      "metadata": {
+        "id": "Jkfk5orKD5v0",
+        "outputId": "9dcca5f1-de51-4334-d6e5-b3de649888ce",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "32.0"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 15
+        }
+      ],
+      "source": [
+        "import math\n",
+        "math.sqrt(1024)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "3GJn-X7gD5v0"
+      },
+      "source": [
+        "### Exercícios complementares\n",
+        "\n",
+        "Os operadores // e % trabalham com divisão inteira. Por exemplo, dividir 15 por 10 considerando apenas número inteiros é igual a 1. O resto da divisão é igual a 15 - (10*1), ou seja, 5."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 16,
+      "metadata": {
+        "scrolled": true,
+        "id": "Jn6Sj75aD5v0",
+        "outputId": "368e133b-0707-470b-e2b9-0f0b5d27bcf9",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "1"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 16
+        }
+      ],
+      "source": [
+        "15//10"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 17,
+      "metadata": {
+        "scrolled": true,
+        "id": "9BExUStgD5v0",
+        "outputId": "5b21eb13-32c9-4197-fc76-e3dcb825c6eb",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "5"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 17
+        }
+      ],
+      "source": [
+        "15%10"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "QIB9r1O8D5v0"
+      },
+      "source": [
+        "EC2 - Calcule o resto da divisão de 227 por 20."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 18,
+      "metadata": {
+        "id": "PsB7SgPrD5v0",
+        "outputId": "33f5eb81-c05a-4388-d837-973d59103a0d",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "7"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 18
+        }
+      ],
+      "source": [
+        "227%20"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "fe_P80nRD5v1"
+      },
+      "source": [
+        "# Valores, nomes e variáveis"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "nVmXqhsYD5v1"
+      },
+      "source": [
+        "Em Python, tanto textos como números são chamados de *valores*. \n",
+        "\n",
+        "Podemos nos referir a valores usando *nomes*. \n",
+        "\n",
+        ">Em outras linguagens, usa-se o termo **variável** em vez de nome. Vamos adotar este termo aqui por ele ser mais universal.\n",
+        "\n",
+        "Teste as células abaixo:"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 19,
+      "metadata": {
+        "scrolled": true,
+        "id": "zzMJnyZiD5v1",
+        "outputId": "4e5fb1af-9f8f-41c5-a595-8f294c552793",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "7"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 19
+        }
+      ],
+      "source": [
+        "x = 2          # qualquer coisa após o # é um comentário\n",
+        "y = 5\n",
+        "x + y"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "uBmXSdyTD5v1"
+      },
+      "source": [
+        "Múltiplas variáveis podem estar associadas ao mesmo valor."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 20,
+      "metadata": {
+        "id": "2t_S_O4cD5v1",
+        "outputId": "ef48685c-ffee-478a-89e0-a5de02da4bcb",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "1"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 20
+        }
+      ],
+      "source": [
+        "x = y = 1\n",
+        "y"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 21,
+      "metadata": {
+        "id": "t7HQQKFSD5v1",
+        "outputId": "57800d18-6696-4ee9-9036-62cdcbe21f7e",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Este é um texto.'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 21
+        }
+      ],
+      "source": [
+        "texto = 'Este é um texto.' # textos podem ser escritos entre aspas simples\n",
+        "texto"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 22,
+      "metadata": {
+        "id": "qJVWj4QDD5v1",
+        "outputId": "9f1b6b50-1250-4188-a63a-47ed57ca1026",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Este é outro texto.'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 22
+        }
+      ],
+      "source": [
+        "outro_texto = \"Este é outro texto.\" # textos podem ser escritos entre aspas duplas\n",
+        "outro_texto"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "3EOjYesPD5v2"
+      },
+      "source": [
+        "### Exercícios de fixação\n",
+        "\n",
+        "Para verificar que seu código está correto, lembre-se de acrescentar uma linha contendo apenas o nome da variável para visualizar o valor associado a ela."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "6Z1-SwyXD5v2"
+      },
+      "source": [
+        "EF7 - Associe uma variável `numero` ao número `10`."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 23,
+      "metadata": {
+        "id": "sYkHyeT8D5v2"
+      },
+      "outputs": [],
+      "source": [
+        "numero = 10"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "jvLmR-zjD5v2"
+      },
+      "source": [
+        "EF8 - Associe uma variável `nome` ao texto `Python`."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 24,
+      "metadata": {
+        "id": "kGaoHT07D5v2"
+      },
+      "outputs": [],
+      "source": [
+        "nome = 'python'"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "u8mYxKtkD5v2"
+      },
+      "source": [
+        "EF9 - Associe uma variável `resto` ao resultado do operação de resto entre `234` e `10`."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 25,
+      "metadata": {
+        "id": "6SFokI-VD5v2"
+      },
+      "outputs": [],
+      "source": [
+        "resto = 234%10"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "tVU2HVC0D5v2"
+      },
+      "source": [
+        "EF10 - Associe uma variável `k` ao valor `8`. Associe uma variável `quadrado_k` ao quadrado do valor associado à variável `k`."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 26,
+      "metadata": {
+        "id": "Zv86iPEFD5v3"
+      },
+      "outputs": [],
+      "source": [
+        "k = 8\n",
+        "quadrado_k = k**2"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Ry_ZefJHD5v3"
+      },
+      "source": [
+        "EF11 - Associe uma váriavel `z` ao valor `256`. Associe uma variável `divisao_zk` ao resultado da divisão entre os valores associados às variáveis `z` e `k`."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 27,
+      "metadata": {
+        "id": "sQhpkcOmD5v3"
+      },
+      "outputs": [],
+      "source": [
+        "z = 256\n",
+        "divisao_kz = z / k"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "KoIUiTVAD5v3"
+      },
+      "source": [
+        "## Dados informados pelo usuário"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "BpLMUgnnD5v3"
+      },
+      "source": [
+        "O procedimento `input()` solicita ao usuário dados que podem ser associados a variáveis. É possível personalizar a mensagem de solicitação, como mostrado abaixo."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 28,
+      "metadata": {
+        "id": "mnXNKug4D5v3",
+        "outputId": "6246fccf-144c-4635-d8ca-11ca62d3b135",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 53
+        }
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Diga um valor: 20\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'20'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 28
+        }
+      ],
+      "source": [
+        "texto_usuario =  input(\"Diga um valor: \")\n",
+        "texto_usuario"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "rM9f99GRD5v3"
+      },
+      "source": [
+        "Por padrão, qualquer dado passada pelo usuário será tratado como texto. Para tratá-lo como um valor numérico, você deve usar os procedimentos `int()` ou `float()`, dependendo de serem números inteiros ou reais."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 29,
+      "metadata": {
+        "id": "-ShHrBUYD5v3",
+        "outputId": "81a2b6ba-67f9-4680-fe42-41e05aa62b72",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Diga um valor inteiro: 20\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "21"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 29
+        }
+      ],
+      "source": [
+        "inteiro = int(input(\"Diga um valor inteiro: \"))\n",
+        "inteiro + 1"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 30,
+      "metadata": {
+        "id": "7YMTSSLLD5v3",
+        "outputId": "15ff08b7-8bd2-4b20-a4f6-ba49797a1a01",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Diga um valor real: 21.5\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "22.5"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 30
+        }
+      ],
+      "source": [
+        "real = float(input(\"Diga um valor real: \"))\n",
+        "real + 1"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "KZNicLWwD5v4"
+      },
+      "source": [
+        "### Exercícios de fixação"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "MIhVijeID5v4"
+      },
+      "source": [
+        "EF12 - Solicite ao usuário *seu nome* e o associe a uma variavél chamada `nome`."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 31,
+      "metadata": {
+        "id": "SBXHE8nfD5v4",
+        "outputId": "e5ef1d64-ec7a-46d6-8154-7233d7b56b9c",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "digite seu nome: dinorah\n"
+          ]
+        }
+      ],
+      "source": [
+        "nome = input('digite seu nome: ')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "eKMrzCdHD5v4"
+      },
+      "source": [
+        "EF13 - Solicite ao usuário *sua idade* e a associe a uma variável chamada `idade`."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 32,
+      "metadata": {
+        "id": "wtoWZm89D5v4",
+        "outputId": "95b80928-5b99-474d-ab1e-0708ff2266ff",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "diogite sua idade: 19\n"
+          ]
+        }
+      ],
+      "source": [
+        "idade = int(input('digite sua idade: '))"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "M3VoKApSD5v4"
+      },
+      "source": [
+        "EF14 - Solicite ao usuário *sua altura* e a associe a uma variável chamada `altura`."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 33,
+      "metadata": {
+        "id": "Vy6AQtqYD5v4",
+        "outputId": "aa11060a-1264-4d68-cc0e-dcf7915a1f0f",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "digite sua altura: 1.67\n"
+          ]
+        }
+      ],
+      "source": [
+        "altura = float(input('digite sua altura: '))"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "gzaXgP6ID5v4"
+      },
+      "source": [
+        "## Informando dados ao usuário"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "PVd_Z43JD5v5"
+      },
+      "source": [
+        "Assim como é possível receber dados do usuário, também é possível informar dados ao usuário.\n",
+        "\n",
+        "Para isto, usamos o procedimento `print()`."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 34,
+      "metadata": {
+        "id": "p0PktPzED5v5",
+        "outputId": "b410e3fc-f432-4727-8cad-5f9dd6464cea",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Este é um texto.\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(texto)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "gn65e6-AD5v5"
+      },
+      "source": [
+        "É possível informar os valores associados a múltiplas variáveis com uma única chamada ao procedimento `print()`. "
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 35,
+      "metadata": {
+        "id": "zLA_0hm7D5v5",
+        "outputId": "23e4f2ac-347f-4f4a-d42a-4321e97cdd31",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Este é um texto. 1\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(texto, x)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ivARhax3D5v5"
+      },
+      "source": [
+        "Também é possível informar textos, valores e o resultado de expressões:"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 36,
+      "metadata": {
+        "id": "n0ioBsoaD5v5",
+        "outputId": "c0733f18-f30c-49f9-d531-dfb9e1e7bc61",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Testando 3 2\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"Testando\", 3, x + y)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ARLc-OcAD5v5"
+      },
+      "source": [
+        "### Exercícios de fixação"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "EmbC5plCD5v5"
+      },
+      "source": [
+        "EF15 - Informe ao usuário **seu nome**."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 37,
+      "metadata": {
+        "id": "k1baqO7uD5v6",
+        "outputId": "179c522c-77b5-4767-c58a-2d8f7fcb358f",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "seu nome é dinorah\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(f'seu nome é {nome}')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Ty9g8aBBD5v6"
+      },
+      "source": [
+        "EF16 - Informe ao usuário **sua idade**."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 38,
+      "metadata": {
+        "id": "FrPH3FveD5v6",
+        "outputId": "ec6e5879-23fe-4ba5-f96c-b7db4f6f1ab2",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "sua idade é 19\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(f'sua idade é {idade}')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "-W41j6_4D5v6"
+      },
+      "source": [
+        "EF17 - Informe ao usuário **seu índice de massa corporal (IMC)**. Para isso, solicite ao usuário seu peso."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 40,
+      "metadata": {
+        "id": "6SuMumwKD5v6",
+        "outputId": "2df69a14-b06d-47be-cb7c-5a9398557dab",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite seu peso: 55\n",
+            "seu imc é de 19.72\n"
+          ]
+        }
+      ],
+      "source": [
+        "peso = float(input('digite seu peso: '))\n",
+        "\n",
+        "print(f'seu imc é de {round(peso / altura**2,2)}')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "LniBVFSSD5v6"
+      },
+      "source": [
+        "## Exercícios do URI"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Pxy5RZvqD5v6"
+      },
+      "source": [
+        "O URI é um juiz online utilizado em treinamentos para competições de programação.\n",
+        "\n",
+        "Nesta disciplina, utilizaremos exercícios inspirados na seção **Iniciante**, adaptados para o nosso contexto.\n",
+        "\n",
+        "Para ver a descrição do exercício em sua versão original do URI, clique no seu número."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "lAauPQ8_D5v7"
+      },
+      "source": [
+        "[1008](https://www.urionlinejudge.com.br/judge/pt/problems/view/1008) - Um sistema do setor de recursos humanos de uma empresa deve calcular o salário a ser pago para cada funcionário da empresa em função de quantas horas o funcionário trabalhou no mês e de quanto ele recebe por hora trabalhada.\n",
+        "\n",
+        "Escreva um código Python que leia o nome de um funcionário, seu número de horas trabalhadas, o valor que recebe por hora e calcula seu salário. Em seguida, mostre o nome e o salário do funcionário."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "wYr6avYND5v7"
+      },
+      "source": [
+        "|.| Entrada | Saída |\n",
+        "|-|----|---|\n",
+        "| *Exemplo 1* | João 100 5.50  | João 550.00 | \n",
+        "| *Exemplo 2* | Maria 200 20.50 | Maria 4100.00 |\n",
+        "| *Exemplo 3* | Facebookson 145 15.55 | Facebookson 2254.75 |"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 42,
+      "metadata": {
+        "id": "Q4kMvDxQD5v7",
+        "outputId": "5b8c44b9-08c6-4875-ccda-e58ae13815dd",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite seu nome: dinorah\n",
+            "quantas horas voce trabalha? 120\n",
+            "quanto ganha por hora? 70\n",
+            "dinorah 8400.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "nome = input('digite seu nome: ')\n",
+        "horas = int(input('quantas horas voce trabalha? '))\n",
+        "valor = float(input('quanto ganha por hora? '))\n",
+        "\n",
+        "print(f'{nome} {round(horas*valor,2)}')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Twsun820D5v7"
+      },
+      "source": [
+        "[1009](https://www.urionlinejudge.com.br/judge/pt/problems/view/1009) - No caso de empresas do setor de comércio, a remuneração mensal de cada vendedor é composta por um salário fixo mais uma bonificação proporcional às vendas efetuadas pelo vendedor naquele mês.\n",
+        "\n",
+        "Escreva um código Python que leia o nome de um vendedor, o seu salário fixo e o total de vendas efetuadas por ele no mês (em dinheiro). Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, informe o total que ele deverá receber no final do mês."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "bZVD464uD5v7"
+      },
+      "source": [
+        "|.| Entrada | Saída |\n",
+        "|-|----|---|\n",
+        "| *Exemplo 1* | João 500 1230.30  | João 684.54 | \n",
+        "| *Exemplo 2* | Pedro 700 0.00 | Pedro 700.00 |\n",
+        "| *Exemplo 3* | Mangojata 1700 1230.50 | Mangojata 1884.58 |"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 4,
+      "metadata": {
+        "id": "nRojrRZeD5v7",
+        "outputId": "5c90a914-710a-4c08-ca9c-833e9ebc4c41",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite seu nome: dinorah\n",
+            "digite seu salario: 500\n",
+            "digite suas vendas: 1230.30\n",
+            "dinorah 684.54\n"
+          ]
+        }
+      ],
+      "source": [
+        "nome = input('digite seu nome: ')\n",
+        "sal = float(input('digite seu salario: '))\n",
+        "ven = float(input('digite suas vendas: '))\n",
+        "\n",
+        "print(f'{nome} {round(sal + (ven*0.15),2)}')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "nnkl0pPND5v7"
+      },
+      "source": [
+        "[1010](https://www.urionlinejudge.com.br/judge/pt/problems/view/1010) - Outro tipo de sistema utilizado no setor de comércio é o sistema de frente de loja, que calcula o total de uma venda baseado nos itens adquiridos, suas quantidades e seus valores unitários.\n",
+        "\n",
+        "Escreva um código Python que leia as informações de dois produtos adquiridos em uma compra e informe o valor a ser pago. Para cada produto, leia seu código, sua quantidade e seu valor unitário."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "D7EgEdtJD5v7"
+      },
+      "source": [
+        "|.| Entrada | Saída |\n",
+        "|-|----|---|\n",
+        "| *Exemplo 1* | 12 1 5.30 <br> 16 2 5.10 | VALOR A PAGAR: 15.50 |\n",
+        "| *Exemplo 2* | 13 2 15.30 <br> 161 4 5.20 | VALOR A PAGAR: 51.40 |\n",
+        "| *Exemplo 3* | 1 1 15.10 <br> 2 1 15.10 | VALOR A PAGAR: 30.20 |"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 5,
+      "metadata": {
+        "id": "2jGQZ0r5D5v8",
+        "outputId": "100605e4-c5b3-4028-d906-0ac16f321544",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite o codigo: 12\n",
+            "digite a quantidade: 1\n",
+            "digite o valor unitario: 5.30\n",
+            "digite o codigo: 16\n",
+            "digite a quantidade: 2\n",
+            "digite o valor unitario: 5.10\n",
+            "VALOR A PAGAR: 15.5\n"
+          ]
+        }
+      ],
+      "source": [
+        "cod = float(input('digite o codigo: '))\n",
+        "qnt = float(input('digite a quantidade: '))\n",
+        "val = float(input('digite o valor unitario: '))\n",
+        "\n",
+        "cod2 = float(input('digite o codigo: '))\n",
+        "qnt2 = float(input('digite a quantidade: '))\n",
+        "val2 = float(input('digite o valor unitario: '))\n",
+        "\n",
+        "\n",
+        "print(f'VALOR A PAGAR: {round(qnt * val,2) + round(qnt2 * val2,2)}')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "CzcVG4uID5v8"
+      },
+      "source": [
+        "[1018](https://www.urionlinejudge.com.br/judge/pt/problems/view/1018) - Sistemas de frente de loja também devem auxiliar vendedores a dar trocos. Por simplicidade, vamos considerar primeiro apenas trocos inteiros, que podem ser dados usando apenas cédulas.\n",
+        "\n",
+        "Escreva um código Python que leia um valor de troco e informe quantas cédulas de cada valor devem ser entregues pelo vendedor ao cliente.\n",
+        "\n",
+        "**Obs.:** Considere que ainda existem notas de R$ 1,00."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "KVj5dOOhD5v8"
+      },
+      "source": [
+        "|.| Entrada | Saída |\n",
+        "|-|----|---|\n",
+        "| *Exemplo 1* | 576 | 5 nota(s) de 100,00 <br /> 1 nota(s) de 50,00 <br /> 1 nota(s) de 20,00 <br /> 0 nota(s) de 10,00 <br /> 1 nota(s) de 5,00  <br /> 0 nota(s) de 2,00  <br /> 1 nota(s) de 1,00 |\n",
+        "| *Exemplo 2* | 11257 | 112 nota(s) de 100,00 <br /> 1 nota(s) de 50,00 <br /> 0 nota(s) de 20,00 <br /> 0 nota(s) de 10,00 <br /> 1 nota(s) de 5,00 <br /> 1 nota(s) de 2,00 <br /> 0 nota(s) de 1,00 |\n",
+        "| *Exemplo 3* | 503 | 5 nota(s) de 100,00 <br /> 0 nota(s) de 50,00 <br /> 0 nota(s) de 20,00 <br /> 0 nota(s) de 10,00 <br /> 0 nota(s) de 5,00 <br /> 1 nota(s) de 2,00 <br /> 1 nota(s) de 1,00 |"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 18,
+      "metadata": {
+        "scrolled": true,
+        "id": "9MB48kSGD5v8",
+        "outputId": "952a3997-9c71-4799-c5ff-687774023a28",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite o troco: 197\n",
+            "[1.0, 1.0, 2.0, 0, 1.0, 1.0, 0]\n",
+            "1.0 nota(s) de 100,00\n",
+            "1.0 nota(s) de 50,00\n",
+            "2.0 nota(s) de 20,00\n",
+            "0 nota(s) de 10,00\n",
+            "1.0 nota(s) de 5,00\n",
+            "1.0 nota(s) de 2,00\n",
+            "0 nota(s) de 1,00\n"
+          ]
+        }
+      ],
+      "source": [
+        "troco = float(input('digite o troco: '))\n",
+        "\n",
+        "teste = 0\n",
+        "notas = [100,50,20,10,5,2,1] \n",
+        "t_notas = []\n",
+        "\n",
+        "\n",
+        "for x in notas :\n",
+        "  if troco//x > 0 :\n",
+        "    teste = troco//x\n",
+        "    t_notas.append(teste)\n",
+        "    troco -= teste*x\n",
+        "  else : \n",
+        "    t_notas.append(0)\n",
+        "\n",
+        "print(t_notas)\n",
+        "\n",
+        "print(f'{t_notas[0]} nota(s) de 100,00\\n{t_notas[1]} nota(s) de 50,00\\n{t_notas[2]} nota(s) de 20,00\\n'\n",
+        "f'{t_notas[3]} nota(s) de 10,00\\n{t_notas[4]} nota(s) de 5,00\\n{t_notas[5]} nota(s) de 2,00\\n{t_notas[6]} nota(s) de 1,00')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "oub4-yXoD5v8"
+      },
+      "source": [
+        "[1021](https://www.urionlinejudge.com.br/judge/pt/problems/view/1021) - Agora vamos voltar ao mundo real, onde trocos podem precisar utilizar cédulas e moedas.\n",
+        "\n",
+        "Escreva um código Python que leia um valor de troco e informe quantas cédulas e moedas de cada valor devem ser entregues pelo vendedor ao cliente.\n",
+        "\n",
+        "**Obs.:** Considere que ainda existem moedas de R$ 0,01."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "L2zlFuqdD5v8"
+      },
+      "source": [
+        "|.| Entrada | Saída |\n",
+        "|-|----|---|\n",
+        "| *Exemplo 1* | 576.73 | NOTAS: <br /> 5 nota(s) de 100,00 <br /> 1 nota(s) de 50,00 <br /> 1 nota(s) de 20,00 <br /> 0 nota(s) de 10,00 <br /> 1 nota(s) de 5,00  <br /> 0 nota(s) de 2,00  <br /> MOEDAS: <br /> 1 moeda(s) de 1,00 <br /> 1 moeda(s) de 0,50 <br /> 0 moeda(s) de 0,25 <br /> 2 moeda(s) de 0,10 <br /> 0 moeda(s) de 0,05 <br /> 3 moeda(s) de 0,01 |\n",
+        "| *Exemplo 2* | 4.00 | NOTAS: <br /> 0 nota(s) de 100,00 <br /> 0 nota(s) de 50,00 <br /> 0 nota(s) de 20,00 <br /> 0 nota(s) de 10,00 <br /> 0 nota(s) de 5,00  <br /> 2 nota(s) de 2,00 <br /> MOEDAS: <br /> 0 moeda(s) de 1,00 <br /> 0 moeda(s) de 0,50 <br /> 0 moeda(s) de 0,25 <br /> 0 moeda(s) de 0,10 <br /> 0 moeda(s) de 0,05 <br /> 0 moeda(s) de 0,01 |\n",
+        "| *Exemplo 3* | 91.01 | NOTAS: <br /> 0 nota(s) de 100,00 <br /> 1 nota(s) de 50,00 <br /> 2 nota(s) de 20,00 <br /> 0 nota(s) de 10,00 <br /> 0 nota(s) de 5,00  <br /> 0 nota(s) de 2,00 <br /> MOEDAS: <br /> 1 moeda(s) de 1,00 <br /> 0 moeda(s) de 0,50 <br /> 0 moeda(s) de 0,25 <br /> 0 moeda(s) de 0,10 <br /> 0 moeda(s) de 0,05 <br /> 1 moeda(s) de 0,01 |"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "f3rUcVzyD5v9"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "S08-MM7vD5v9"
+      },
+      "source": [
+        "[1019](https://www.urionlinejudge.com.br/judge/pt/problems/view/1019) - Sistemas de frente de loja também precisam registrar a data e o horário das vendas. \n",
+        "\n",
+        "Computadores normalmente armazenam datas utilizando uma única unidade de tempo, convertendo para o formato de apresentação desejado quando necessário. Por simplicidade, considere neste exercício que o dado informado representa apenas o horário da venda.\n",
+        "\n",
+        "Escreva um código Python que leia um valor em segundos e o converta para o formato *horas:minutos:segundos*.\n",
+        "\n",
+        "**Dica 1 --** a opção sep do procedimento print() permite configurar o caracter de separação entre as diferentes partes de uma impressão, como no exemplo abaixo."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "scrolled": true,
+        "id": "n8TTgwPRD5v9"
+      },
+      "outputs": [],
+      "source": [
+        "print(10,33,51,sep=\":\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "mLV_ypuLD5v9"
+      },
+      "source": [
+        "**Dica 2 --** é possível utilizar o procedimento print para impressão formatada. Pesquise o funcionamento da máscara de formatação abaixo:"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 22,
+      "metadata": {
+        "id": "ouZt6wCrD5v-",
+        "outputId": "44d114e1-5518-4b1d-e263-a05da68e5b0d",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite a hora: 86153\n",
+            "1435 23\n"
+          ]
+        }
+      ],
+      "source": [
+        "#print(\"%02d:%02d:%02d\" % (9,33,51))\n",
+        "\n",
+        "seg = int(input('digite a hora: '))\n",
+        "\n",
+        "min = seg//60\n",
+        "hora = min//60\n",
+        "\n",
+        "\n",
+        "print(min,hora)\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "8fGzpP97D5v-"
+      },
+      "source": [
+        "|.| Entrada | Saída |\n",
+        "|-|----|---|\n",
+        "| *Exemplo 1* | 556  | 00:09:16 | \n",
+        "| *Exemplo 2* | 1 | 00:00:01 |\n",
+        "| *Exemplo 3* | 86153 | 23:55:53 |"
+      ]
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "ipython",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.6.7"
+    },
+    "colab": {
+      "provenance": []
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
